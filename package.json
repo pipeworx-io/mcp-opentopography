@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-opentopography",
-  "version": "0.1.0",
-  "description": "OpenTopography global DEM rasters + point queries (free key)",
+  "version": "0.1.1",
+  "description": "OpenTopography MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-opentopography": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "opentopography"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-opentopography"
+    "url": "git+https://github.com/pipeworx-io/mcp-opentopography.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-27a88325af83f42d1891edce9d79c60a9d29e216d1dbfcb1f4e61cc7ed2c13b0",
+    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
   }
 }

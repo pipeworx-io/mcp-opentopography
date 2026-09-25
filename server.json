@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/opentopography",
   "title": "Opentopography",
-  "description": "OpenTopography global DEM rasters + point queries (free key)",
-  "version": "0.1.0",
+  "description": "OpenTopography MCP.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/opentopography",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-opentopography",
