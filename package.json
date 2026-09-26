@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-opentopography",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "OpenTopography MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-27a88325af83f42d1891edce9d79c60a9d29e216d1dbfcb1f4e61cc7ed2c13b0",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-12f779acfe117f33d49555acf9a912999ab136d3af023644021e8ff853eda7a3",
+    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
   }
 }
