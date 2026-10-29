@@ -1,0 +1,67 @@
+[
+  {
+    "name": "point_elevation",
+    "description": "Elevation at a point (returns a 1-pixel raster URL — use opentopodata for direct point values).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        },
+        "dataset": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    }
+  },
+  {
+    "name": "dem",
+    "description": "DEM raster for a bounding box (returns URL to GeoTIFF).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "dataset": {
+          "type": "string"
+        },
+        "south": {
+          "type": "number"
+        },
+        "north": {
+          "type": "number"
+        },
+        "west": {
+          "type": "number"
+        },
+        "east": {
+          "type": "number"
+        },
+        "format": {
+          "type": "string",
+          "description": "GTiff (default) | AAIGrid | HFA"
+        }
+      },
+      "required": [
+        "dataset",
+        "south",
+        "north",
+        "west",
+        "east"
+      ]
+    }
+  },
+  {
+    "name": "datasets",
+    "description": "List the supported global DEM (digital elevation model) dataset identifiers available via OpenTopography: SRTMGL1, SRTMGL3, AW3D30, NASADEM, COP30, COP90.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
